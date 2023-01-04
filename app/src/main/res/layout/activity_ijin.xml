@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IjinActivity">
+
+    <Spinner
+        android:id="@+id/spinnerkategori"
+        android:layout_width="347dp"
+        android:layout_height="48dp"
+        android:autofillHints="Select"
+        android:contentDescription="kategori"
+        android:hint="@string/username"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTglMulai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kirim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLampiran2" />
+
+    <TextView
+        android:id="@+id/txtUsernameEmail6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perihal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPerihal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextPerihal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTglSampai"
+        app:layout_constraintVertical_bias="0.968" />
+
+    <ImageView
+        android:id="@+id/tglSampai"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPerihal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tglDari"
+        app:layout_constraintVertical_bias="0.495"
+        app:srcCompat="@drawable/ic_baseline_date_range_24" />
+
+    <EditText
+        android:id="@+id/editTextTglMulai"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="  /   /"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPerihal"
+        app:layout_constraintEnd_toStartOf="@+id/tglDari"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <EditText
+        android:id="@+id/editTextTglSampai"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="  /   /"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPerihal"
+        app:layout_constraintEnd_toStartOf="@+id/tglSampai"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTglMulai"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <TextView
+        android:id="@+id/txtUsernameEmail5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keterangan"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPerihal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextPerihal2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPerihal"
+        app:layout_constraintVertical_bias="0.952" />
+
+    <TextView
+        android:id="@+id/txtUsernameEmail4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sampai Tanggal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTglSampai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTglSampai"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTglMulai"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtUsernameEmail3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dari Tanggal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTglMulai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerkategori"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextPerihal"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Perihal"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <EditText
+        android:id="@+id/editTextPerihal2"
+        android:layout_width="348dp"
+        android:layout_height="108dp"
+        android:ems="10"
+        android:hint="Keterangan"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPerihal"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <ImageView
+        android:id="@+id/tglDari"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerkategori"
+        app:srcCompat="@drawable/ic_baseline_date_range_24" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lampiran"
+        app:layout_constraintBottom_toTopOf="@+id/imgLampiran1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextPerihal2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPerihal2"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <ImageButton
+        android:id="@+id/imgLampiran1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgLampiran2"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPerihal2"
+        app:layout_constraintVertical_bias="0.658"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/imgLampiran2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPerihal2"
+        app:layout_constraintVertical_bias="0.376"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/imgLampiran3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toEndOf="@+id/imgLampiran2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPerihal2"
+        app:layout_constraintVertical_bias="0.376"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/txtUsernameEmail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerkategori"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerkategori"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
